@@ -29,6 +29,15 @@ app.listen(3000, function () {
     console.log('Example app listening on port 3000!')
     console.log(`Your API key is ${process.env.API_KEY}`);
 
+    textapi.summarize({
+        'url': 'https://www.dailymail.co.uk/tvshowbiz/article-7510063/Kim-Kardashian-criticized-leading-Armenian-American-advocacy-group-making-SKIMS-Turkey.html',
+        'sentences_number': 3
+      }, function(error, response) {
+        if (error === null) {
+          console.log(response);
+        }
+      });
+
 })
 
 app.get('/test', function (req, res) {
