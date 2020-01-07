@@ -1,8 +1,8 @@
-import { checkForName } from './js/nameChecker'
+import { checkIfURL} from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
 
 export {
-    checkForName,
+    checkIfURL,
     handleSubmit
 }
 
@@ -12,6 +12,5 @@ import './styles/form.scss'
 import './styles/header.scss'
 import './styles/resets.scss'
 
-console.log(checkForName);
 
 console.log("CHANGE!!");
