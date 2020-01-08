@@ -1,4 +1,4 @@
-function handleSubmit(event) {
+export function handleSubmit(event) {
     event.preventDefault()
     let url = document.getElementById('url').value;
     if (Client.checkIfURL(url)) {
@@ -21,15 +21,15 @@ const postReq = async (path, Url) => {
         })
         .then(res => {
           console.log(res)
-          return res.json()
+          return res.json();
         })
         .then((res) => {
-          document.getElementById('polarity').innerHTML = res.polarity;
-          document.getElementById('polarity-confidence').innerHTML = res.polarity_confidence;
-          document.getElementById('subjectivity').innerHTML = res.subjectivity;
-          document.getElementById('subjectivity-confidence').innerHTML = res.subjectivity_confidence;
+            
+          document.getElementById('polarity').innerHTML = '<strong>Polarity:</strong>' + res.polarity;
+          document.getElementById('polarity-confidence').innerHTML = '<strong>Polarity Confidence:</strong>' + res.polarity_confidence.toFixed(2);
+          document.getElementById('subjectivity').innerHTML = '<strong>Subjectivity:</strong>' + res.subjectivity;
+          document.getElementById('subjectivity-confidence').innerHTML = '<strong>Subjectivity Confidence:</strong>' + res.subjectivity_confidence.toFixed(2);
           document.getElementById('full-text').innerHTML = res.text;
+          document.getElementById('summary').innerHTML = res.sentences;
   }
 )}
-
-export { handleSubmit }

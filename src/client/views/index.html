@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
+        <title>Natural Language Processing via API</title>
     </head>
 
     <body>
@@ -11,15 +11,16 @@
             <div class="">
                 Logo
             </div>
-            <div class="">
-                navigation
-            </div>
         </header>
 
         <main>
             <section>
+                <p>Submit an article or blog link below to have it evaluated by Aylien's Natural Language Processing API</p>
+                <p>The content will be evaluated on several factors including: polarity, subjectivity etc</p>
+            </section>
+            <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="url" type="text" name="input" value="" placeholder="Name">
+                    <input id="url" type="text" name="input" value="" placeholder="Enter URL here">
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
@@ -31,8 +32,14 @@
                     <li id="polarity-confidence"></li>
                     <li id="subjectivity"></li>
                     <li id="subjectivity-confidence"></li>
-                    <li id="full-text"></li>
+                    <li id="summary"></li>
                 </ul>
+                <section>
+                    <p>Full Article/Blog Text</p>
+                    <div id='full-text'>
+
+                    </div>
+                </section>
             </section>
         </main>
 
