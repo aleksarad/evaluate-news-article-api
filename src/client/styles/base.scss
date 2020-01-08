@@ -2,13 +2,32 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: center;
 }
 
-main {
-    flex: 2;
-}
 
 section {
-    max-width: 800px;
+    max-width: 80%;
     margin: 50px auto;
+}
+
+.API-results {
+    display: flex;
+}
+
+#result-list, #text-submitted {
+    width: 80%;
+}
+
+ul li {
+    text-indent: 40px;
+}
+
+#results li {
+    list-style: none;
+}
+
+#full-text {
+    overflow: scroll;
+    height: 300px;
 }

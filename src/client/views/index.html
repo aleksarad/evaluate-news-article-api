@@ -8,33 +8,39 @@
     <body>
 
         <header>
-            <div class="">
-                Logo
-            </div>
+            <h1>Article/Blog Text Evaluator</h1>
         </header>
 
         <main>
             <section>
-                <p>Submit an article or blog link below to have it evaluated by Aylien's Natural Language Processing API</p>
-                <p>The content will be evaluated on several factors including: polarity, subjectivity etc</p>
+                <p>This is a language processing tool that relies on <a href="">Aylien's Content Analysis API</a>. Please enter a valid URL to an article, blog, or text-based web page below. <br> 
+                The content submitted will be evaluated on the following factors: </p>
+                <ul>
+                    <li> Polarity referes to whether the author's tone is positive, negative, or neutral.</li>
+                    <li> Subjectivity is xxfjsfjsl</li>
+                   
+                </ul>
             </section>
+
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
                     <input id="url" type="text" name="input" value="" placeholder="Enter URL here">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <input id= "submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
-            <section>
-                <h2>Results</h2>
-                <ul>
-                    <li id="polarity"></li>
-                    <li id="polarity-confidence"></li>
-                    <li id="subjectivity"></li>
-                    <li id="subjectivity-confidence"></li>
-                    <li id="summary"></li>
-                </ul>
-                <section>
+            <section class='API-results'>
+                <section id= "result-list">
+                    <h2>Results</h2>
+                    <ul id = "results">
+                        <li id="polarity"></li>
+                        <li id="polarity-confidence"></li>
+                        <li id="subjectivity"></li>
+                        <li id="subjectivity-confidence"></li>
+                        <li id="summary"></li>
+                    </ul>
+                </section>
+                <section id ="text-submitted">
                     <p>Full Article/Blog Text</p>
                     <div id='full-text'>
 
