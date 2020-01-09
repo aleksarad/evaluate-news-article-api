@@ -4,7 +4,7 @@ form {
     padding: 20px;
     text-align: center;
     background-color: $accent-color;
-    color: #000;
+    color: #333;
 }
 
 #url {
@@ -30,6 +30,7 @@ form {
     font-family: 'Roboto Mono', monospace;
     background-color: $bg-color;
     color: $font-color;
+    border: none;
 }
 
 #submit:hover {

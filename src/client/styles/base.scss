@@ -45,10 +45,12 @@ section {
 
 #result-container, #text-container {
     width: 100%;
-    // border: 1px solid;
     padding: 0 5%;
-    margin: 0 3%;
-}
+ }
+
+ #result-container {
+    border-right: 1px solid;
+ }
 
 #api-explain {
     margin: 15px 50px;

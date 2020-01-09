@@ -30,6 +30,5 @@ const postReq = async (path, Url) => {
           document.getElementById('subjectivity').innerHTML = '<strong>Subjectivity: </strong>' + res.subjectivity;
           document.getElementById('subjectivity-confidence').innerHTML = '<strong>Subjectivity Confidence: </strong>' + res.subjectivity_confidence.toFixed(2);
           document.getElementById('full-text').innerHTML = res.text;
-          document.getElementById('summary').innerHTML = res.sentences;
   }
 )}
