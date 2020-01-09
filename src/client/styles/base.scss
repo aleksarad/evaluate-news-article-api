@@ -1,33 +1,64 @@
+// * {
+//     border: 1px solid;
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,500&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
 }
 
+main {
+    font-size: 15px;
+}
+
+/*Section Sizing*/
 
 section {
-    max-width: 80%;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
-.API-results {
+#description-sec {
+    max-width: 75%;
+}
+
+#form-sec {
+    max-width: 85%;
+}
+
+#API-results-sec {
     display: flex;
+    // justify-content: space-between;
+    border: 1px solid;
+    max-width: 80%;
+    padding: 0;
 }
 
-#result-list, #text-submitted {
-    width: 80%;
+#result-container, #text-container {
+    // min-width: 300px;
+    // max-width: 80%;
+    width: 100%;
+    border: 1px solid;
+    padding: 0 5%;
+    margin: 0 3%;
 }
 
-ul li {
-    text-indent: 40px;
+#api-explain {
+    margin: 15px 50px;
 }
 
-#results li {
+#results-list {
     list-style: none;
+    margin:15px;
+
 }
 
 #full-text {
     overflow: scroll;
     height: 300px;
+    padding-left: 10px;
 }
