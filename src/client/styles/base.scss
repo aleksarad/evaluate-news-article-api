@@ -1,6 +1,4 @@
-// * {
-//     border: 1px solid;
-// }
+@import 'variables.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,500&display=swap');
 
@@ -10,20 +8,25 @@ body {
     min-height: 100vh;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
+    background-color: $bg-color;
+    color: $font-color;
 }
 
-main {
-    font-size: 15px;
-}
 
-/*Section Sizing*/
+/*Sections*/
 
 section {
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 #description-sec {
     max-width: 75%;
+    font-size: 15px;
+}
+
+#description-sec a {
+    text-decoration: none;
+    color: $link-color;
 }
 
 #form-sec {
@@ -32,17 +35,17 @@ section {
 
 #API-results-sec {
     display: flex;
-    // justify-content: space-between;
-    border: 1px solid;
     max-width: 80%;
     padding: 0;
+    font-size: 17px;
 }
 
+
+/*Inside Results Section*/
+
 #result-container, #text-container {
-    // min-width: 300px;
-    // max-width: 80%;
     width: 100%;
-    border: 1px solid;
+    // border: 1px solid;
     padding: 0 5%;
     margin: 0 3%;
 }
@@ -59,6 +62,7 @@ section {
 
 #full-text {
     overflow: scroll;
-    height: 300px;
+    height: 200px;
     padding-left: 10px;
 }
+

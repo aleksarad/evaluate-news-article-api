@@ -1,0 +1,11 @@
+@import 'variables.scss';
+
+footer {
+    text-align: center;
+    margin: 30px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: $link-color;
+}

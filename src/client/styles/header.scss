@@ -1,16 +1,20 @@
+@import 'variables.scss';
+
 header, h2 {
     text-align: center;
     padding-top: 20px;
 }
 
 h1 {
-    margin: 60px auto 20px auto;
-    font-size: 27px;
-    background-color:black;
-    color:white;
-    display:inline;
+    margin: 60px 0 20px 0;
+    font-size: 30px;
+    background-color:$accent-color;
+    color:#000;
+    display:inline-block;
+    padding: 3px 5px;
 }
 
 h2 {
     font-size: 18px;
+    padding: 10px;
 }

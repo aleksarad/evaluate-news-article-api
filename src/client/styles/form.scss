@@ -1,24 +1,37 @@
+@import 'variables.scss';
+
 form {
-    border: 1px solid #545454;
-    border-radius: 5px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
+    background-color: $accent-color;
+    color: #000;
 }
 
 #url {
     padding: 5px 20px;
     width: 90%;
-    height: 35px;
+    height: 30px;
     margin: 10px 0;
     font-size: 18px;
     font-family: 'Roboto Mono', monospace;
+    border: 2px solid $bg-color;
+}
+
+#url::placeholder {
+    color: $bg-color;
 }
 
 #submit {
-    padding: 10px;
+    height: 40px;
     width: 92%;
     margin: 10px 0;
     font-size: 20px;
     cursor: pointer;
     font-family: 'Roboto Mono', monospace;
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+#submit:hover {
+    color: $accent-color;
 }

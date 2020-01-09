@@ -25,10 +25,10 @@ const postReq = async (path, Url) => {
         })
         .then((res) => {
             
-          document.getElementById('polarity').innerHTML = '<strong>Polarity:</strong>' + res.polarity;
-          document.getElementById('polarity-confidence').innerHTML = '<strong>Polarity Confidence:</strong>' + res.polarity_confidence.toFixed(2);
-          document.getElementById('subjectivity').innerHTML = '<strong>Subjectivity:</strong>' + res.subjectivity;
-          document.getElementById('subjectivity-confidence').innerHTML = '<strong>Subjectivity Confidence:</strong>' + res.subjectivity_confidence.toFixed(2);
+          document.getElementById('polarity').innerHTML = '<strong>Polarity: </strong>' + res.polarity;
+          document.getElementById('polarity-confidence').innerHTML = '<strong>Polarity Confidence: </strong>' + res.polarity_confidence.toFixed(2);
+          document.getElementById('subjectivity').innerHTML = '<strong>Subjectivity: </strong>' + res.subjectivity;
+          document.getElementById('subjectivity-confidence').innerHTML = '<strong>Subjectivity Confidence: </strong>' + res.subjectivity_confidence.toFixed(2);
           document.getElementById('full-text').innerHTML = res.text;
           document.getElementById('summary').innerHTML = res.sentences;
   }
