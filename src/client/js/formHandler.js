@@ -3,7 +3,7 @@ export function handleSubmit(event) {
     event.preventDefault()
     //selects input
     let url = document.getElementById('url').value;
-    //checks if input is valid URL
+    //checks if input is valid URL, if yes runs postReq
     if (Client.checkIfURL(url)) {
         postReq('http://localhost:3000/api', url)
     } else {
@@ -11,6 +11,7 @@ export function handleSubmit(event) {
     }
 }
 
+//Post request to /api which sends back API data as a response
 const postReq = async (path, Url) => {
     await fetch(path, {
       method: 'POST',
@@ -26,6 +27,7 @@ const postReq = async (path, Url) => {
           console.log(res)
           return res.json();
         })
+//takes response object and uses it to update innerHTML
         .then((res) => {
             
           document.getElementById('polarity').innerHTML = '<strong>Polarity: </strong>' + res.polarity;

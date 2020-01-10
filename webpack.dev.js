@@ -1,6 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
-const HtmlWebPackPlugin = require("html-webpack-plugin")
+const HtmlWebPackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
@@ -39,7 +39,5 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         }),
-        '@babel/plugin-transform-regenerator',
-        '@babel/plugin-transform-runtime',
     ]
 }
