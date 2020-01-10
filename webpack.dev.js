@@ -38,6 +38,8 @@ module.exports = {
             // Automatically remove all unused webpack assets on rebuild
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
-        })
+        }),
+        '@babel/plugin-transform-regenerator',
+        '@babel/plugin-transform-runtime',
     ]
 }

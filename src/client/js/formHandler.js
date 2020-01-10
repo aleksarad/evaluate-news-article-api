@@ -1,6 +1,9 @@
+//Function that runs on click
 export function handleSubmit(event) {
     event.preventDefault()
+    //selects input
     let url = document.getElementById('url').value;
+    //checks if input is valid URL
     if (Client.checkIfURL(url)) {
         postReq('http://localhost:3000/api', url)
     } else {

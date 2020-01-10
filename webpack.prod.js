@@ -46,5 +46,7 @@ module.exports = {
             filename: "./index.html",
         }),
         new MiniCssExtractPlugin(),
+        '@babel/plugin-transform-regenerator',
+        '@babel/plugin-transform-runtime',
     ]
 }
