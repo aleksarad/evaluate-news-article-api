@@ -12,8 +12,8 @@ This is a node.js app built primarily with HTML, CSS, JavaScript, Webpack, and S
 1. After downloading the zip file, you will need to register for Aylien API credentials here: https://developer.aylien.com/signup, and enter them into the src/server/index.js file as shown below:
 
 `var textapi = new aylien({
-  application_id: CREDENTIALS GO HERE,
-  application_key: CREDENTIALS GO HERE
+  application_id: "CREDENTIALS GO HERE",
+  application_key: "CREDENTIALS GO HERE"
 })`
 
 2. From here, cd into the project and `npm install` to install all package.json dependencies. 
