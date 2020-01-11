@@ -7,6 +7,7 @@ export function handleSubmit(event) {
     if (Client.checkIfURL(url)) {
         postReq('http://localhost:3000/api', url)
     } else {
+    //alerts user
         alert('invalid URL, please try again')
     }
 }

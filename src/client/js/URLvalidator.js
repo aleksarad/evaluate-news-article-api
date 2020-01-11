@@ -1,4 +1,4 @@
-//Checks if input URL is valid, if this returns false, an alert will be triggered in handleSubmit()
+//Checks if input URL is valid, if this returns false, an alert will be triggered in handleSubmit to user
 
 export function checkIfURL(url) {
     console.log("validating url:", url);
