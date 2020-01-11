@@ -18,7 +18,7 @@ This is node.js app built primarily with HTML, CSS, JavaScript, Webpack, and Sas
 
 2. From here, cd into the project and `npm install` to install all package.json dependencies. 
 
-3. `run build-prod`
+3. `npm un build-prod`
 
 4. `npm start` and go to http://localhost:3000/
 
