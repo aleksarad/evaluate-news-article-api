@@ -1,4 +1,4 @@
-**Evaluating Text Content with Natural Language Processing
+**Evaluating Text Content with Natural Language Processing**
 
 This app evaluates content submitted by the user using Aylien's Content Analysis API. The submitted link will be evaluated on a number of factors: polarity, subjectivity, polarity confidence, and subjectivity confidence. The results are fetched from the API and displayed on the webpage.
 
