@@ -9,11 +9,10 @@ app.use(bodyParser.json())
 
 app.use(express.static('dist'))
 
-//Setup dote for the API keys
+//Setup dotenv for the API keys
 const dotenv = require('dotenv');
 dotenv.config();
 
-// console.log(__dirname)
 
 //Mock API and Aylien API vars
 const mockAPIResponse = require('./mockAPI.js');
