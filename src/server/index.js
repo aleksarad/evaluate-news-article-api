@@ -50,6 +50,6 @@ app.get('/test', function (req, res) {
 
 // Port designation
 app.listen(3000, function () {
-    console.log('Example app listening on http://localhost:3000/!')
+    console.log('Example app listening on http://localhost:3000/')
 })
 
